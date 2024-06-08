@@ -1,64 +1,88 @@
-img,picture,svg {
-    max-width: 100%;
-    display: block;}
 
-    :root {
-        --orange: #FD9222;
-        --white: #FFFFFF;
-        --black: #111111;
-        --dark-violet:#1E1823;
-        --primary-font: 'Montserrat', sans-serif;
+*,*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+body {
+    margin:0;
+    font-family: var(--primary-font);
     
-    }
+}
+:root {
+    --orange: #FD9222;
+    --white: #FFFFFF;
+    --black: #111111;
+    --dark-violet:#1E1823;
+    --primary-font: 'Montserrat', sans-serif;
 
+}
 
- .benefits_container {
-    margin: 0 auto;
-    max-width: 1200px;
-    margin-top: 30px;
+ .benefit_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:#1E1823; 
+  margin-left: auto;
+  margin-right: auto;
+     margin-top: 50px;
+     margin-bottom: 100px;
+} 
+
+.card-set {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
-    background-color: #1E1823;
-    color: white;
-    padding: 2em;
+   justify-content: center;
+   align-items: center;
+    list-style: none;
+    padding: 25px 25px;
+  }
+
+  .item {
+    flex-basis: calc((100% - 30px) / 3);
+    padding: 30px 30px; 
+    background-color:#1E1823;
+    position: relative;
+ 
+  }
+
+  .card-set .line:after {
+    content: '';
+    height: 48%;
+    position: absolute; 
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    top: 25%;
+    right: 0%;
+    
     }
+  
+  .item h2{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 600px;
+    color:rgba(255, 255, 255, 1);
+    line-height: 22px;
+    margin: 20px 0;
 
-      
-     .element {
-        width: 30%;
-    } 
+  }
+  .item p {
+    font-family: var(--primary-font);
+    font-weight: 400px;
+    font-size: 14px;
+    color:rgba(255, 255, 255, 0.7);
+    line-height: 17px;
+    letter-spacing: -2%;
+    margin: 0;
 
-    .element + .element {
-        margin-left: 50px;
-    }
-
-    .benefits_icons{
-      width: 25px;
-         height: 25px;
-         margin-bottom: 30px;
-        border-radius: 100px;
-        /* padding: 20px 20px;
-         border-radius: 100px;
-         border: 1px solid ; */
-    } 
-
-    .elements_text h2 {
-        font-weight: 600;
-        font-family: var(--primary-font);
-        font-size: 18px;
-        line-height: 22px;
-        color: var(--white);
-
-    }
-
-    .elements_text p {
-        font-weight: 400;
-        font-family: var(--primary-font);
-        font-size: 10x;
-        line-height: 17px;
-        letter-spacing: -2%;
-        color: var(--white) 
-        rgba(255, 255, 255, 0.7);
-        margin-top: 1em;
-    }
+  }
+.icon {
+    width: 48px;
+    height: 48px;
+    padding: 12px 12px;
+    border: 1px solid cornsilk;
+    border-radius: 100%;
+    margin: 5px;
+}
