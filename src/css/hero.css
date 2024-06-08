@@ -24,51 +24,38 @@ svg {
 }
 
 .startpage_hero {
-    max-width: 1136px;
-    padding: 40px;
-    margin: auto;
-    border-radius: 30px;
-    background-image: url(../images/hero_desktop@2x.jpg);
-    background-size: cover;
-    background-position: 50% 50%;
-
-}
-
-.container_hero {
-    width: 100%;
-    padding-top: 13em;
-    padding-bottom: 2em;
-}
-
-.container_hero h2 {
-    font-family: var(--primary-font);
-    font-weight: 500px;
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -3%;
-    color: var(--white);
-
-
-}
-
-.title-hero {
-    display: none;
-}
-
-.mobile_subheader {
-    display: none;
-}
-
-.startpage_butons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
-}
-
-.buttons {
-    flex: 1;
-}
+     max-width: 1136px;
+      padding: 40px;
+       margin: auto; 
+      border-radius: 30px; 
+      background-image:url(../images/hero_desktop@2x.jpg);
+      background-size:cover;
+      background-position: 50% 50%; 
+      
+    }
+    
+    .container_hero {
+        width: 100%; 
+        font-family: var(--primary-font);
+        font-weight: 500px;
+        font-size: 28px;
+        list-style: 34px;
+        letter-spacing: -3%;
+        color:var(--white);
+        padding-top: 13em;
+        padding-bottom: 1em;
+        
+    }
+     .startpage_butons {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px;
+    
+    }  
+    
+    .buttons {
+        flex: 1;  
+    }
 
 /* Buy now button */
 
@@ -125,52 +112,50 @@ svg {
 
 /* Icon scroll down  */
 
-.scroll_tolink_container {
-    flex: 0.20;
-    gap: 20px;
+    .scroll_tolink_conainer {
+    flex: 0.25; 
+    gap: 30px;
     display: flex;
     text-align: center;
     align-items: center;
 }
 
+   
+    .text_buttonscroll {
+        text-decoration: none;
+        font-family:var(--primary-font);
+        font-weight: 500;
+        font-size: 14px;
+        line-height:18px;
+        letter-spacing: -3%;
+        color: var(--white);
+         
+    }
+    .scroll_icon {
+        width: 40px;
+        height: 40px;
+          border-radius: 100%;
+          fill:var(--orange);
+          padding: 5px;
+          border-radius: 100%;
+          background-color: var(--white);    
+             }
+    .team_social li {
+        background-color: var(--dark-white);
+        padding: 10px;
+        border-radius: 100%;
+        background-color: var(--white);
+    }
+    
+    
+    .scroll_tolink_conainer:hover .text_buttonscroll {
+        color: var(--orange);
+    }
 
-.text_buttonscroll {
-    text-decoration: none;
-    font-family: var(--primary-font);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -3%;
-    color: var(--white);
-
-}
-
-.scroll_icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    fill: var(--orange);
-    padding: 5px;
-    border-radius: 100%;
-    background-color: var(--white);
-}
-
-.team_social li {
-    background-color: var(--dark-white);
-    padding: 10px;
-    border-radius: 100%;
-    background-color: var(--white);
-}
-
-
-.scroll_tolink_container:hover .text_buttonscroll {
-    color: var(--orange);
-}
-
-.scroll_tolink_container:hover .scroll_icon {
-    fill: var(--white);
-    background-color: var(--orange);
-}
+    .scroll_tolink_conainer:hover .scroll_icon {
+        fill:var(--white);
+        background-color: var(--orange);
+    }
 
 /* Modal Buy Now */
 
@@ -367,87 +352,24 @@ svg {
 
 
 
-/* Button Submit close modal form */
-.modal_form-btn {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 140px;
-    height: 40px;
-    background-color: var(--orange);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: var(--white);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    margin-top: 15px;
-    border-radius: 100px;
-}
-
-
-
-/* Media queries mobile adaptive*/
-/* @media screen and (min-width: 400px) and (max-width: 800px) */
-
-@media screen and (max-width: 478px) {
-    .container_hero h2 {
-        display: none;
-    }
-
-    .mobile_subheader {
-        display: contents;
-        font-weight: 500px;
-        font-size: 20px;
-        line-height: 24px;
-        letter-spacing: -3%;
-        color: var(--white);
-
-    }
-
-    .container_hero {
-        padding-top: 22em;
-    }
-
-    .startpage_hero {
-        padding: 3em 20px;
-    }
-
-    .buynow_button {
-        padding: 10px 20px;
-
-    }
-
-    .btn_link {
-        padding: 10px 10px;
-
-    }
-
-    .startpage_butons {
+    /* Button Submit close modal form */
+    .modal_form-btn { 
         display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-
+        justify-content: space-around;
+        align-items: center;
+        width: 140px;
+        height: 40px;
+        background-color: var(--orange);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: var(--white);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        margin-top: 15px;
+        border-radius: 100px;
     }
-
-    .scroll_tolink_container {
-        margin-left: 5px;
-        gap: 15px;
-    }
-}
-
-/* Media queries for tablet */
-@media screen and (min-width:479px) and (max-width:767px) {
-    .scroll_tolink_container {
-        flex: 0.35;
-    }
-
-    .scroll_icon {
-        padding: 5px;
-        border-radius: 100%;
-    }
-}
+    
