@@ -40,6 +40,7 @@
 
     .seller-description {
         display: flex;
+        max-width: 1136px;  
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
@@ -100,11 +101,14 @@
 
 .seller-description {
     display: flex;
+    max-width: 1136px;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 100%;
+    gap: 14px;
 }
 
 .seller-description p {
@@ -121,10 +125,11 @@
     flex-direction: column;
     gap: 32px;
     flex-wrap: wrap;
-    margin: 30px auto;
-    padding: 20px;
-    padding-top: 50px;
+    margin: 0px auto;
+    /* padding: 20px; */
+    /* padding-top: 50px; */
     width: 100%;
+    margin-bottom: 128px;
 }
 
 .top-sellers-container {
