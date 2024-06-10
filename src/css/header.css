@@ -91,7 +91,7 @@
       height: 20px;
       cursor: pointer;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
       .header_social__icon {
             fill: var(--black);
             stroke: var(--white);
@@ -261,7 +261,7 @@
 
 /* Media query for mobile/tablet  */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
       .js-open-menu {
             display: block;
 
