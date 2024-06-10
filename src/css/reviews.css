@@ -142,7 +142,7 @@
     pointer-events: none;
 }
 
-.reviews [data-modal] {
+.modal4{
     width: 100%;
     height: 100%; 
     justify-content: center;
@@ -152,9 +152,9 @@
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.reviews__content [data-modal-content] {
-    width: 311px;
-    height: 471px;
+.reviews__content {
+    background-color: black;
+    width: 311px; 
     background: #fafafa;
     border-radius: 15px;
     top: 50%;
