@@ -67,7 +67,7 @@
 .hm_descr {
     border-radius: 15px;
     max-width: 335px;
-    background-color: rgb(247, 182, 145);
+    /* background-color: rgb(247, 182, 145); */
     text-align: left;
 }
 
