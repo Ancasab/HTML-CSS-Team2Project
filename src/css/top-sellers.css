@@ -8,6 +8,8 @@
     .top-sellers {
         margin-bottom: 72px;
     }
+
+    
 }
 
 /* tablet */
@@ -23,6 +25,7 @@
     .img-hide {
         display: none;
     }
+
 }
 
 /* phone */
@@ -63,14 +66,11 @@
         font-size: 24px;
     }
 
-
-}
-
 @media screen and (max-width:1200px) {
     .img-hide {
         display: none;
     }
-}
+ }
 
 @media screen and (min-width:376px) and (max-width:767px) {
     .mobile-p {
@@ -252,7 +252,7 @@ img {
 .modal2_position {
     max-width: 600px;
     background-color: #FAFAFA;
-    top: 400%;
+    top: 280%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
