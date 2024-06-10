@@ -136,42 +136,37 @@
 
 /*Form*/
 
-.is-hidden {
+.is-hidden.reviews {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.modal4 {
-    z-index: 2;
+.modal4{
     width: 100%;
     height: 100%; 
+    justify-content: center;
     top: 0;
     left: 0;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.is-hidden [data-modal-content] {
-    transform: translate(-50%, -50%) scale(0.5);
-
-}
-
 .reviews__content {
-    width: 500px;
-    height: 600px;
+    background-color: black;
+    width: 311px; 
     background: #fafafa;
-    position: absolute;
+    border-radius: 15px;
     top: 50%;
     left: 50%;
-    border-radius: 15px;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
+    position: absolute;
     transition-duration: 1s;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
     padding: 32px 24px;
 }
 
- [data-modal-close] {
+.reviews__button-close [data-modal-close] {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -185,7 +180,7 @@
     opacity: 100%;
 }
 
-[data-modal-close] svg {
+.reviews__button-close [data-modal-close] svg {
     width: 24px;
     height: 24px;
     stroke: var(--black);

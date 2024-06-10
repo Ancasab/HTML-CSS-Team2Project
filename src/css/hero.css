@@ -193,10 +193,18 @@ svg {
 .is-hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events:none;
+    pointer-events: none;
 }
 
-
+/* [data-modal] {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
 
 .modal1 {
     z-index: 2;
@@ -305,7 +313,7 @@ svg {
 
 }
 
-/* Modal form data collection not finished*/
+/* Modal form data collection */
 
 .modal_form_position {
     display: flex;
@@ -321,7 +329,6 @@ svg {
     color: var(--black);
     position: relative;
     margin-bottom: 20px;
-    width: 100%;
 }
 
 .pers_info {
@@ -331,11 +338,10 @@ svg {
 }
 
 .modal_form_position .phone_icon {
-    width: 100%;
     position: absolute;
     height: 32px;
     width: 32px;
-    top: 45px;
+    top: 40px;
     left: 12px;
 }
 
@@ -360,11 +366,13 @@ svg {
 }
 
 .modal_form_position input {
-    padding-left: 55px;
+    padding-left: 25px;
 }
 
-
-/* Adapted code for prefix not finished */
+/* .modal_form_position .phone {
+    padding-left: 100px;
+} */
+/* Adapted code for prefix */
  .modal_form_position {
     display: block;
     margin-bottom: 1em;
@@ -372,8 +380,8 @@ svg {
 
 .input-container {
     position: relative;
- display: inline-block;
-    width: 80%; 
+    display: inline-block;
+    width: 80%;
 }
 
 .phone-prefix {
@@ -391,12 +399,17 @@ svg {
     letter-spacing: -2%;
 }
 
+.input-container .phone {
+    width: 100%;
+    padding-left: 100px; /* Adjust padding to fit the prefix */
+    box-sizing: border-box;
 
+}
 
 .phone_icon {
     position: absolute;
     right: 30px;
-    top: 45%;
+    top: 53%;
     transform: translateY(-50%);
     pointer-events: none;
     font-family: var(--primary-font);
@@ -404,13 +417,11 @@ svg {
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -2%;
+
+
 }
 
-
-
 /* Finish adaptated code for prefix */
-
-
 .modal_form_comments {
     outline: none;
     margin-top: 5px;
