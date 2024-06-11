@@ -240,14 +240,6 @@ svg {
 
 }
 
-/* @media screen and (max-width: 375px) {
-    .modal1_content {
-        max-width: 609px;
-        min-width: 311px;
-        height: 994px;
-    }
-    
-} */
 
 
 [data-modal-close] {

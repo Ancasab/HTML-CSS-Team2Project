@@ -139,6 +139,7 @@
 .top-sellers-container {
     display: flex;
     justify-content: space-between;
+    
 }
 
 
@@ -252,7 +253,7 @@ img {
 .modal2_position {
     max-width: 600px;
     background-color: #FAFAFA;
-    top: 400%;
+    top: 350%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -261,6 +262,7 @@ img {
     transform: translate(-50%, -50%) scale(1);
     transition-duration: 1s;
     padding: 20px 40px;
+    border-radius: 15px;
 
 
 }
