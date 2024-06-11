@@ -54,7 +54,8 @@
     border-radius: 15px;
     width: 335px;
     height: 500px;
-    background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-mobile.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url("/src/images/how-is-made/how-is-made-for-mobile.jpg");
     position: relative; 
 }
 
@@ -95,7 +96,8 @@
     .hm_show {
         width: 614px;
         height: 400px;
-        background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-tablet.jpg");  
+        background-image: url("/src/images/how-is-made/how-is-made-for-tablet.jpg");
+       
     }
     
     .hm_show svg {
@@ -130,7 +132,8 @@
     .hm_show {
         width: 600px;
         height: 400px;
-        background: rgba(0, 0, 0, 0.4), url("/src/images/how-is-made/how-is-made-for-station.jpg");  
+        background-color: rgba(0, 0, 0, 0.4); 
+        background-image: url("/src/images/how-is-made/how-is-made-for-station.jpg");  
     }
 
     .hm ul {
