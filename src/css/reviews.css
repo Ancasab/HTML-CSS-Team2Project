@@ -136,37 +136,44 @@
 
 /*Form*/
 
-.is-hidden.reviews {
+.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
 
-.modal4{
+.modal4 {
+    z-index: 2;
     width: 100%;
-    height: 100%; 
-    justify-content: center;
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.reviews__content {
-    background-color: black;
-    width: 311px; 
-    background: #fafafa;
-    border-radius: 15px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    transition-duration: 1s;
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-    padding: 32px 24px;
+.is-hidden [data-modal-content] {
+    transform: translate(-50%, -50%) scale(0.5);
+
 }
 
-.reviews__button-close [data-modal-close] {
+.reviews__content {
+    width: 520px;
+    height: 600px;
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0, 2, 1, 1), (0, 1, 1, 0), (0, 1, 3, 0);
+    transform: translate(-50%, -50%) scale(1);
+    transition-duration: 1s;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    padding: 32px 32px;
+}
+
+[data-modal-close] {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -174,22 +181,24 @@
     border-radius: 100%;
     top: 14px;
     right: 14px;
-    background-color: #fafafa; 
+    background-color: #fafafa;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 100%;
 }
 
-.reviews__button-close [data-modal-close] svg {
+.reviews__button-close svg {
     width: 24px;
     height: 24px;
     stroke: var(--black);
 }
 
-.reviews__button-close [data-modal-close]:hover .close {
+.reviews__button-close:hover .close {
     stroke: var(--orange);
     cursor: pointer;
 }
+
+/* Ramane neschimbat codul de mai jos */
 
 .change-paragraph {
     display: none;

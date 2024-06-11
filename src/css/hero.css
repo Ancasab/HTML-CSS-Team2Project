@@ -222,7 +222,9 @@ svg {
 }
 
 .modal1_content {
-    max-width: 600px;
+    max-width: 609px;
+    /* max-height:1058px;  */
+    /* height: 100%; */
     background-color: #FAFAFA;
     position: absolute;
     top: 65%;
@@ -237,6 +239,16 @@ svg {
 
 
 }
+
+/* @media screen and (max-width: 375px) {
+    .modal1_content {
+        max-width: 609px;
+        min-width: 311px;
+        height: 994px;
+    }
+    
+} */
+
 
 [data-modal-close] {
     top: 10px;
