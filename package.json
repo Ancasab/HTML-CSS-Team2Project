@@ -1,21 +1,21 @@
 {
-  "name": "parcel-project-template",
+  "name": "HTML-CSS-Team2Project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "ancasab.github.io/HTML-CSS-Team2Project/",
+  "homepage": "https//:ancasab.github.io/HTML-CSS-Team2Project/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /HTML-CSS-Team2Project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ancasab/HTML-CSS-Team2Project"
+    "url": "git+https://github.com/Ancasab/HTML-CSS-Team2Project.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ancasab/HTML-CSS-Team2Project"
+    "url": "https://github.com/Ancasab/HTML-CSS-Team2Project/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
